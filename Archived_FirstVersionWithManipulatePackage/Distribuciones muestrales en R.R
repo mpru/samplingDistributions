@@ -1,15 +1,15 @@
 # -----------------------------------------------------------
-# ESTUDIO DE DISTRIBUCIONES MUESTRALES MEDIANTE SIMULACI”N
+# ESTUDIO DE DISTRIBUCIONES MUESTRALES MEDIANTE SIMULACI√ìN
 # -----------------------------------------------------------
 
-# PASO 1: C”MO SIMULAR MUESTRAS, CALCULAR ESTADÕSTICAS Y GRAFICAR
+# PASO 1: C√ìMO SIMULAR MUESTRAS, CALCULAR ESTAD√çSTICAS Y GRAFICAR
 # ---------------------------------------------------------------
 
-# Simular una muestra de tamaÒo n = 50 de una poblaciÛn N(80, 5)
+# Simular una muestra de tama√±o n = 50 de una poblaci√≥n N(80, 5)
 n <- 50
 datos <- rnorm(n, mean = 80, sd = 5)
 
-# Calcular media, variancia y desvÌo estandar de la muestra
+# Calcular media, variancia y desv√≠o estandar de la muestra
 mean(datos)
 var(datos)
 sd(datos)
@@ -17,14 +17,14 @@ sd(datos)
 # Hacer un histograma de los 50 valores de la muestra
 hist(datos, breaks = 10)
 
-# Simular 100 muestras de tamaÒo n = 5 de una poblaciÛn N(80, 5)
+# Simular 100 muestras de tama√±o n = 5 de una poblaci√≥n N(80, 5)
 n <- 5
 nsim <- 100
 datos <- matrix(rnorm(n * nsim, mean = 80, sd = 5), nrow = nsim)
 head(datos)
 dim(datos) # cada fila es una muestra
 
-# Calcular media, variancia y desvÌo  de cada muestra
+# Calcular media, variancia y desv√≠o  de cada muestra
 medias <- apply(datos, 1, mean)
 head(medias)
 length(medias)
@@ -43,21 +43,21 @@ hist(medias, breaks = 10)
 # PASO 2: A SIMULAR Y JUGAR!
 # ---------------------------------------------------------------
 
-# La siguiente funciÛn utiliza los conceptos anteriores pero de manera m·s elaborada
-# para probar con distintas distribuciones de X, tamaÒos muestrales, cantidad de
+# La siguiente funci√≥n utiliza los conceptos anteriores pero de manera m√°s elaborada
+# para probar con distintas distribuciones de X, tama√±os muestrales, cantidad de
 # muestras simuladas, etc.
 
 # Necesitamos tener instalados los paquetes: dplyr, ggplot2, manipulate, ggExtra, gridExtra
 
-# El cÛdigo que implementa la simulaciÛn se encuentra en el archivo simularDistrMuestral.R
+# El c√≥digo que implementa la simulaci√≥n se encuentra en el archivo simularDistrMuestral.R
 # y primero debemos cargarlo a R:
 source("simularDistrMuestral.R")
 
-# Ahora lo usamos asÌ e interactuamos con el gr·fico:
+# Ahora lo usamos as√≠ e interactuamos con el gr√°fico:
 simularDistrMedia()
 
-# PASO 3: Seguir con variancia y proporciÛn
-# FaltarÌa hacer la intro pero las funciones se usan asÌ:
+# PASO 3: Seguir con variancia y proporci√≥n
+# Faltar√≠a hacer la intro pero las funciones se usan as√≠:
 
 simularDistrS2()
 

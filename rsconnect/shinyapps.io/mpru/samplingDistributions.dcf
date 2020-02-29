@@ -1,0 +1,13 @@
+name: samplingDistributions
+title: samplingDistributions
+username:
+account: mpru
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1882400
+bundleId: 2839711
+url: https://mpru.shinyapps.io/samplingDistributions/
+when: 1582984878.33721
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: Archived_FirstVersionWithManipulatePackage/Distribuciones muestrales en R.R|Archived_FirstVersionWithManipulatePackage/README.md|Archived_FirstVersionWithManipulatePackage/samplingDistributions.Rproj|Archived_FirstVersionWithManipulatePackage/simularDistrMuestral.R
