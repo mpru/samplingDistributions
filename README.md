@@ -3,6 +3,7 @@
 
 **Visualización interactiva de distribuciones muestrales con ggplot2 y Shiny-apps**
 
+Aplicación web disponible en [https://mpru.shinyapps.io/samplingDistributions/](https://mpru.shinyapps.io/samplingDistributions/).
 
 Uno de los conceptos más desafiantes para enseñar y aprender en cualquier curso básico de estadística es el de distribución muestral. Los estudiantes suelen experimentar dificultades para incorporar la noción de que las estadísticas son variables aleatorias y poseen una distribución de probabilidad propia, al mismo tiempo que los docentes buscan maneras prácticas para enfrentar esta abstracción. Con aplicación web se emplea R para simular reiteradas muestras y analizar interactivamente la distribución de las estadísticas obtenidas, haciendo uso de controladores para modificar parámetros distribucionales y de la simulación. 
 
